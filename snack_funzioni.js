@@ -18,3 +18,15 @@ console.log(result1)
 // oppure 
 
 console.log(somma(3, 3))
+
+// come funzione anonima asseganta ad una variabile
+
+const somma2 = function (num1, num2) {
+    const result = num1 + num2
+    return result
+}
+
+console.log(somma2(4, 4))
+
+// come arrow function assegnata ad una variabile
+
