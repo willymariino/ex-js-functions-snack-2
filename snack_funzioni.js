@@ -6,7 +6,7 @@
 - Poi, definisci la stessa funzione somma ma come funzione anonima assegnata a una variabile
 - Quindi, riscrivi la funzione somma con la sintassi delle arrow functions.
 */
-console.log("script avviato")
+console.log("script avviato") // console.log di debug
 
 function somma(num1, num2) {
     const result = num1 + num2
