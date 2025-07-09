@@ -164,7 +164,7 @@ un tempo di avvio e un tempo di stop. Il messaggio deve essere stampato a interv
 */
 
 function eseguiEferma(time, message) {
-    const timerId3 = setInterval((){
+    const timerId3 = setInterval(() => {
         console.log(message)
 
     }, time)
