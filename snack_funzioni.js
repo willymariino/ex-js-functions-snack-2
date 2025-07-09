@@ -30,3 +30,9 @@ console.log(somma2(4, 4))
 
 // come arrow function assegnata ad una variabile
 
+const somma3 = (num1, num2) => {
+    const result = num1 + num2
+    return result
+}
+
+console.log(somma3(6, 6))
