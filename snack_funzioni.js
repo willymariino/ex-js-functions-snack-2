@@ -7,3 +7,14 @@
 - Quindi, riscrivi la funzione somma con la sintassi delle arrow functions.
 */
 
+function somma(num1, num2) {
+    const result = num1 + num2
+    return result
+}
+
+const result1 = somma(3, 3)
+console.log(result1)
+
+// oppure 
+
+console.log(somma(3, 3))
