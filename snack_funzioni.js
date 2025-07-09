@@ -6,6 +6,7 @@
 - Poi, definisci la stessa funzione somma ma come funzione anonima assegnata a una variabile
 - Quindi, riscrivi la funzione somma con la sintassi delle arrow functions.
 */
+console.log("script avviato")
 
 function somma(num1, num2) {
     const result = num1 + num2
@@ -106,20 +107,24 @@ Definisci una funzione che accetta un messaggio e lo stampa ogni secondo.
 Nota: Questa funzione creerà un loop infinito. Interrompilo manualmente o usa clearInterval() in un altro script.
 */
 
-const message = setInterval(stampaOgniSecondo, 1000)
+// const message = setInterval(stampaOgniSecondo("che buona la pizza"), 1000)
+
+// function stampaOgniSecondo(messaggio) {
+//     console.log(messaggio)
+// }
+
+// clearInterval(message)
 
 function stampaOgniSecondo(messaggio) {
-    console.log(messaggio)
+    const timerId = setInterval(() => {
+        console.log(messaggio)
+    }, 1000)
+    return timerId
 }
 
-stampaOgniSecondo("che buona la pizza")
+let timerId = stampaOgniSecondo("che buona la pizza")
 
-clearInterval(message)
-
-/*
-
-*/
-
-/*
-
-*/
+setTimeout(() => {
+    clearInterval(timerId)
+    console.log("clearInterval attivato")
+}, 6000)
