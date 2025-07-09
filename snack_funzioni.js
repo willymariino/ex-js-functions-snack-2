@@ -86,3 +86,14 @@ console.log("il risultato della moltiplicazione è:", eseguiOperazione2(3, 6, op
 Crea un generatore di funzioni creaTimer
 Scrivi una funzione creaTimer che accetta un tempo (in ms) e restituisce una nuova funzione che avvia un setTimeout per stampare "Tempo scaduto!".
 */
+
+function creaTimer(time) {
+
+    return setTimeout(() => {
+
+        console.log("tempo scaduto")
+
+    }, time)
+}
+
+creaTimer(5000)
