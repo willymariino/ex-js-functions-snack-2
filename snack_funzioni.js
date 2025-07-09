@@ -126,5 +126,41 @@ let timerId = stampaOgniSecondo("che buona la pizza")
 
 setTimeout(() => {
     clearInterval(timerId)
-    console.log("clearInterval attivato")
+    console.log("clearInterval esercizio 5 attivato")
 }, 6000)
+
+/*
+🏆 Snack 6
+Crea un contatore automatico con setInterval
+Definisci una funzione creaContatoreAutomatico che accetta un intervallo di tempo e
+restituisce una funzione che avvia un setInterval, incrementando un contatore e stampandolo.
+*/
+
+let count = 0
+
+function creaContatoreAutomatico(time) {
+    return setInterval(() => {
+        count++
+    }, time)
+}
+
+console.log(creaContatoreAutomatico(1000))
+
+function creaContatoreAutomatico(time) {
+
+    // variabile nello scope esterno    
+    let contatore = 0
+
+    const timerID2 = setInterval(() => {
+        contatore++
+        console.log(contatore)
+    }, time) // se non metto il parametro time, il delay di un secondo viene ignorato
+    return timerID2
+}
+
+let timerID2 = creaContatoreAutomatico(1000)
+
+setTimeout(() => {
+    clearInterval(timerID2)
+    console.log("clearInterval esercizio 6 attivato")
+}, 8000)
