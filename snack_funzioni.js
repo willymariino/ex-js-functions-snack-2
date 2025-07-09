@@ -45,7 +45,7 @@ Definisci una funzione chiamata quadrato che accetta un numero e restituisce il 
 
 const quadrato = (num) => num * num
 
-console.log(quadrato(5))
+console.log("il quadrato del numero è:", quadrato(7))
 
 /*
 🏆 Snack 3
@@ -68,3 +68,21 @@ function eseguiOperazione(num1, num2, callback) {
 }
 
 eseguiOperazione(5, 5, operatore)
+
+// versione con console.log esterno
+
+function operatore2(num1, num2) {
+    return num1 * num2
+}
+
+function eseguiOperazione2(num1, num2, callback) {
+    return callback(num1, num2)
+}
+
+console.log("il risultato della moltiplicazione è:", eseguiOperazione2(3, 6, operatore))
+
+/*
+🏆 Snack 4
+Crea un generatore di funzioni creaTimer
+Scrivi una funzione creaTimer che accetta un tempo (in ms) e restituisce una nuova funzione che avvia un setTimeout per stampare "Tempo scaduto!".
+*/
