@@ -1,6 +1,13 @@
-# Esercizi sulle Funzioni in javascript - Modulo 1 javscript avanzato - lezione 1, funzioni avanzate
+# Esercizi sulle Funzioni in javascript - Modulo 1, javscript avanzato - lezione 1, funzioni avanzate
 
 Questa repository contiene una serie di esercizi svolti. Gli esercizi sono focalizzati sull'utilizzo delle funzioni in JavaScript vanilla, con particolare attenzione a funzioni dichiarative, funzioni anonime, arrow function, callback, e gestione di timer asincroni.
+
+Questa repository contiene una serie di **esercizi svolti** sulla gestione delle funzioni in **JavaScript vanilla**, con particolare attenzione a:
+Funzioni dichiarative
+Funzioni anonime
+Arrow function
+Callback
+Timer asincroni (`setTimeout`, `setInterval`)
 
 ## Descrizione degli esercizi
 
